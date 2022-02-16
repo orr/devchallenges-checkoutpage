@@ -275,3 +275,27 @@ input::placeholder{
 .footer strong{
     text-decoration: underline;
 }
+
+@media (min-width: 700px) {
+    body{
+        padding: 4rem 15rem;
+    }
+    .container{
+        flex-direction: row;
+        gap: 6rem;
+    }
+    .cart{
+        order: 2;
+        align-self: flex-start;
+    }
+    .form{
+        order: 1;
+    }
+    .photo img{
+        height: 135px;
+        width: 135px;
+     }
+     .cart-items{
+         margin-bottom: 2rem;
+     }
+}
