@@ -1,95 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Checkout</title>
+</head>
+<body>
+  <header class="header">
+    <div class="">Checkout</div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="cart">
+        <div class="cart-items">
+          <div class="item">
+            <div class="photo">
+              <img src="" alt="">
+            </div>
+            <div class="details">
+              <h1 class="item-title"></h1>
+              <span class="price"></span>
+              <span class="discount"></span>
+              <div class="quantity">
+                <div class="quantity-selector"></div>
+                <span class="quantity-text"></span>
+                <div class="quantity-selector"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="cart-price">
+          <div class="price-line">
+            <span class="price-line left">Shipping</span>
+            <span class="price-line right">$19</span>
+          </div>
+          <div class="price-line">
+            <span class="price-line left">Total</span>
+            <span class="price-line right">$148</span>
+          </div>
+        </section>
+      </section>
+      <section class="form">
+        <form action="">
+          <section class="contact"> 
+            <h1 class="form-title">Contact infomation</h1>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+          </section>
+          <section class="address">
+            <h1 class="form-title">Shipping address</h1>
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value=""></option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+           </select>
+           <label for="zip">Postal code</label>
+           <input type="text" name="zip" id="zip">
+           <div>
+             <input type="checkbox" name="sava" id="save">
+             <label for="save">Save this information for next time</label>
+           </div>
+          </section>
+          <button class="btn">Continue</button>
+        </form>
+      </section>
     </div>
-  </body>
+  </main>
+  <footer>
+    
+  </footer>
+</body>
 </html>
