@@ -6,6 +6,9 @@
 
 :root{
     --primary-color: #4E5150;
+    --bg-primary:  #F2F2F2;
+    --secondary-color: #F2994A;
+
 }
 
 body{
@@ -14,6 +17,8 @@ body{
     color: var(--primary-color);
     padding: 2rem 1rem;
 }
+
+
 
 .header{
     width: 100%;
@@ -27,4 +32,116 @@ body{
     line-height: 1.8rem;
     color: var(--primary-color);
     transform: rotate(-0.02deg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.cart{
+    background-color: var(--bg-primary);
+    border-radius: .75rem;
+    padding: 1.875rem 1.625rem;
+}
+
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.item{
+    display: flex;
+    gap: 1rem;
+}
+
+.photo{
+    flex: 1;
+}
+
+.photo img{
+    height: 135px;
+    width: 135px;
+    border-radius: 12px;
+}
+
+.details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: .93rem;
+    color: var(--primary-color);
+    margin-bottom: .4rem;
+}
+
+.details .price{
+    font-style: normal;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.06rem;
+    color: var(--secondary-color);
+    margin-right: 1rem;
+}
+
+.details .discount{
+    font-style: normal;
+    font-weight: 600;
+    font-size: .625rem;
+    line-height: .75rem;
+    text-decoration-line: line-through;
+    
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: .75rem;
+    width: 80%;
+}
+
+.quantity-selector{
+    background-color: #E0E0E0;
+    border-radius: 4px;
+    width: 1.375rem;
+    height: 1.375rem;
+    text-align: center;
+}
+
+.quantity-text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #333333;
+}
+
+.cart-price{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.price-line{
+    border-top: 1px solid #BDBDBD;
+    padding-top: .3rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.12rem;
+    line-height: 1.375rem;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
 }
