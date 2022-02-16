@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="styles.css">
   <title>Checkout</title>
 </head>
@@ -29,9 +30,9 @@
                 <span class="discount">$94.99</span>
               </div>
               <div class="quantity">
-                <div class="quantity-selector">+</div>
-                <span class="quantity-text">1</span>
                 <div class="quantity-selector">-</div>
+                <span class="quantity-text">1</span>
+                <div class="quantity-selector">+</div>
               </div>
             </div>
           </div>
@@ -46,9 +47,9 @@
                 <span class="discount">$124.99</span>
               </div>
               <div class="quantity">
-                <div class="quantity-selector">+</div>
-                <span class="quantity-text">1</span>
                 <div class="quantity-selector">-</div>
+                <span class="quantity-text">1</span>
+                <div class="quantity-selector">+</div>
               </div>
             </div>
           </div>
@@ -68,39 +69,63 @@
         <form action="">
           <section class="contact"> 
             <h1 class="form-title">Contact infomation</h1>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
-            <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone">
+            <div class="input-wrapper">
+              <label for="email" >E-mail</label>
+              <div class="input"><i class="material-icons">email</i><input placeholder="Enter your email..." type="email" name="email" id="email"></div>
+            </div>
+            <div class="input-wrapper">
+              <label for="phone">Phone</label>
+              <div class="input"><i class="material-icons">phone</i><input placeholder="Enter your phone..." type="tel" name="phone" id="phone"></div>
+            </div>
           </section>
           <section class="address">
             <h1 class="form-title">Shipping address</h1>
-            <label for="name">Full name</label>
-            <input type="text" name="name" id="name">
-            <label for="address">Address</label>
-            <input type="text" name="address" id="address">
-            <label for="city">City</label>
-            <input type="text" name="city" id="city">
-            <label for="country">Country</label>
-            <select name="country" id="country">
-              <option value=""></option>
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-           </select>
-           <label for="zip">Postal code</label>
-           <input type="text" name="zip" id="zip">
-           <div>
-             <input type="checkbox" name="sava" id="save">
+            <div class="input-wrapper">
+              <label for="name">Full name</label>
+              <div class="input"><i class="material-icons"><span class="material-icons-outlined">
+                account_circle
+                </span></i><input placeholder="Enter your name..." type="text" name="name" id="name"></div>
+            </div>
+            <div class="input-wrapper">
+              <label for="address">Address</label>
+              <div class="input"><i class="material-icons"><span class="material-icons-outlined">
+                home
+                </span></i><input placeholder="Enter your address..." type="text" name="address" id="address"></div>
+            </div>
+            <div class="input-wrapper">
+              <label for="city">City</label>
+               <div class="input"><i class="material-icons"><span class="material-icons-outlined">location_city</span></i>
+                <input placeholder="Enter your city..." type="text" name="city" id="city">
+              </div>
+            </div>
+            <div class="input-half">
+              <div class="input-wrapper">
+                <label for="country">Country</label>
+                <div class="input"><i class="material-icons"><span class="material-icons-outlined">location_city</span></i>
+                  <select placeholder="asd" name="country" id="country">
+                    <option disabled selected style="color:aqua;">Select your country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                </select>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="zip">Postal code</label>
+                 <div class="input"><i class="material-icons"><span class="material-icons-outlined">markunread_mailbox</span></i>
+                  <input placeholder="Postal code..." type="text" name="zip" id="zip">
+                </div>
+              </div>
+            </div>
+           <div class="save">
+             <input type="checkbox" name="save" id="save">
              <label for="save">Save this information for next time</label>
            </div>
           </section>
-          <button class="btn">Continue</button>
+          <div class="btn-wrapper"><button class="btn">Continue</button></div>
         </form>
       </section>
     </div>
   </main>
-  <footer>
-
-  </footer>
+  <footer class="footer">created by <strong>orr</strong> - devChallenges.io</footer>
 </body>
 </html>
