@@ -1,0 +1,30 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #4E5150;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    padding: 2rem 1rem;
+}
+
+.header{
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.header-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--primary-color);
+    transform: rotate(-0.02deg);
+}
